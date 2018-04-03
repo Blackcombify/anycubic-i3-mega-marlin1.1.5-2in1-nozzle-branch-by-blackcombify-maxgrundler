@@ -74,7 +74,7 @@
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_CONFIG_H_AUTHOR "(Max Grundler, Anycubic i3 Mega Dual Extruders Marlin1.1.5)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Blackcombify/MaxGrundler, Anycubic i3 Mega Dual Extruders 2in1 Marlin1.1.5)" // Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION "DualExtruderV1/HeatbedisPIDtuned"// will be shown during bootup in line 1
 #define STRING_SPLASH_LINE2 WEBSITE_URL         "https://www.youtube.com/channel/UClOh5AK64m52cFZRD-PWx6g?view_as=subscriber"// will be shown during bootup in line 2
@@ -133,12 +133,12 @@
 
 // This defines the number of extruders
 // :[1, 2, 3, 4, 5]
-#define EXTRUDERS 2                                                            //<------------------XX
+#define EXTRUDERS 2                                                           
 
 // Generally expected filament diameter (1.75, 2.85, 3.0, ...). Used for Volumetric, Filament Width Sensor, etc.
-//#define DEFAULT_NOMINAL_FILAMENT_DIA 1.75 XX
+//#define DEFAULT_NOMINAL_FILAMENT_DIA 1.75 
 
-// For Cyclops or any "multi-extruder" that shares a single nozzle.             <------------------XX
+// For Cyclops or any "multi-extruder" that shares a single nozzle.             
 #define SINGLENOZZLE
 
 /**
@@ -324,7 +324,7 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-#define HEATER_0_MAXTEMP 260            //xx
+#define HEATER_0_MAXTEMP 260            
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
@@ -372,7 +372,7 @@
 // If your configuration is significantly different than this and you don't understand the issues involved, you probably
 // shouldn't use bed PID until someone else verifies your hardware works.
 // If this is enabled, find your own PID constants below.
-#define PIDTEMPBED           // <------XX
+#define PIDTEMPBED           
 
 //#define BED_LIMIT_SWITCHING
 
@@ -762,7 +762,7 @@
 #define X_BED_SIZE 220
 #define Y_BED_SIZE 220
 
-// Travel limits (mm) after homing, corresponding to endstop positions. <----------------------XX
+// Travel limits (mm) after homing, corresponding to endstop positions. 
 #define X_MIN_POS -5
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
@@ -1509,7 +1509,7 @@
 // Use software PWM to drive the fan, as for the heaters. This uses a very low frequency
 // which is not as annoying as with the hardware PWM. On the other hand, if this frequency
 // is too low, you should also increment SOFT_PWM_SCALE.
-#define FAN_SOFT_PWM     //<-----XX
+#define FAN_SOFT_PWM     
 
 // Incrementing this by 1 will double the software PWM frequency,
 // affecting heaters, and the fan if FAN_SOFT_PWM is enabled.
@@ -1623,7 +1623,7 @@
 // With this option servos are powered only during movement, then turned off to prevent jitter.
 //#define DEACTIVATE_SERVOS_AFTER_MOVE
 
-// Enable Anycubic TFT			//<-----XX
+// Enable Anycubic TFT			
 #define ANYCUBIC_TFT_MODEL
 #define ANYCUBIC_FILAMENT_RUNOUT_SENSOR
 #define ANYCUBIC_TFT_DEBUG
